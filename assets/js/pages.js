@@ -116,8 +116,44 @@ const pageData = {
         title: "Persona matching for participants who resemble your real buyers",
         text: "Screeners are tuned to usage context, product maturity, budget authority, and accessibility needs.",
         points: ["Persona filters", "Diversity checks", "No-show buffers"],
-        images: [image("photo-1522202176988-66273c2fd55f"), image("photo-1521791136064-7986c2920216"), image("photo-1529333166437-7750a6dd5a70")],
-        reverse: true
+        images: [image("photo-1522202176988-66273c2fd55f"), image("photo-1521791136064-7986c2920216"), image("photo-1529333166437-7750a6dd5a70")]
+      },
+      {
+        eyebrow: "AI Sentiment Analysis",
+        title: "Automatically tag emotional response and friction moments",
+        text: "Our AI engine processes transcripts in real-time to highlight where participants feel 'confused', 'delighted', or 'frustrated'.",
+        points: ["Automatic friction tagging", "Sentiment heatmaps", "Key quote extraction"],
+        images: [image("photo-1677442136019-21780ecad995"), image("photo-1620712943543-bcc4688e7485"), image("photo-1507146426996-ef05306b995a")],
+        chart: true
+      },
+      {
+        eyebrow: "Stakeholder Collaboration",
+        title: "Virtual observation rooms that feel like being in the lab",
+        text: "Invite your entire product team to watch sessions live, take collaborative notes, and discuss findings in real-time without distracting the participant.",
+        points: ["Live chat and tagging", "Observer-only channels", "Instant highlight marking"],
+        images: [image("photo-1522071820081-009f0129c71c"), image("photo-1556761175-b413da4baf72"), image("photo-1542744173-8e7e53415bb0")]
+      },
+      {
+        eyebrow: "Global Network",
+        title: "Recruit from 40+ countries for localized product insights",
+        text: "Access a worldwide panel of verified professionals and consumers to ensure your product works across cultures and languages.",
+        points: ["Multi-language moderation", "Cultural context reviews", "Local market specialists"],
+        images: [image("photo-1529400971008-f566de0e6dfc"), image("photo-1526772662000-3f88f10405ff"), image("photo-1454165833767-026638463968")]
+      },
+      {
+        eyebrow: "Tool Integrations",
+        title: "Push evidence directly into your team's existing workflow",
+        text: "Synchronize research findings and video clips directly with Jira, Linear, Slack, or Trello to turn insights into action immediately.",
+        points: ["Jira & Linear Sync", "Slack alert triggers", "Exportable CSV/JSON data"],
+        images: [image("photo-1563986768609-322da13575f3"), image("photo-1460925895917-afdab827c52f"), image("photo-1551288049-bebda4e38f71")],
+        chart: true
+      },
+      {
+        eyebrow: "Benchmark Tracking",
+        title: "Monitor your product's UX health over longitudinal studies",
+        text: "Track SUS, NPS, and task completion rates over time to see exactly how each release impacts the user experience.",
+        points: ["Historical comparisons", "KPI dashboarding", "Trend forecasting"],
+        images: [image("photo-1551288049-bebda4e38f71"), image("photo-1543286386-713bd5483982"), image("photo-1551434678-e076c223a692")]
       },
       {
         eyebrow: "Prototype preview",
@@ -132,8 +168,7 @@ const pageData = {
         text: "Task completion, sentiment, comprehension, friction severity, and quote velocity are summarized without losing nuance.",
         points: ["UX satisfaction score", "Friction density", "Confidence index"],
         images: [image("photo-1554224155-6726b3ff858f"), image("photo-1551288049-bebda4e38f71"), image("photo-1563986768609-322da13575f3")],
-        chart: true,
-        reverse: true
+        chart: true
       },
       {
         eyebrow: "Highlight reels",
@@ -152,6 +187,8 @@ const pageData = {
         cta: true
       }
     ]
+
+
   },
   services: {
     eyebrow: "Research services",
@@ -160,12 +197,12 @@ const pageData = {
     background: image("photo-1551836022-d5d88e9218df", 2400, 1400),
     stats: [["6", "", "service tracks"], ["48", "h", "clip turnaround options"], ["100", "%", "moderated by a UX specialist"]],
     sections: [
-      { eyebrow: "Moderated user testing", title: "Live sessions that reveal expectations, confusion, and product trust", text: "A neutral moderator guides participants through realistic tasks while observers capture decision-grade evidence.", points: ["Remote testing", "Live observation", "Timestamped notes"], images: [image("photo-1556761175-b413da4baf72"), image("photo-1522071820081-009f0129c71c"), image("photo-1517048676732-d65bc937f952")] },
-      { eyebrow: "Prototype evaluation", title: "Pressure-test concepts before engineering commits", text: "Figma, clickable prototypes, landing flows, and onboarding concepts are tested against real comprehension and behavior.", points: ["Figma links", "Task success tracking", "Concept clarity scoring"], images: [image("photo-1581291518857-4e27b48ff24e"), image("photo-1545239351-1141bd82e8a6"), image("photo-1516321318423-f06f85e504b3")], reverse: true },
-      { eyebrow: "Usability audits", title: "Expert review paired with moderated evidence", text: "Audit findings are validated against participant behavior so recommendations do not float away from reality.", points: ["Accessibility review", "UX benchmarking", "Conversion friction"], images: [image("photo-1551288049-bebda4e38f71"), image("photo-1460925895917-afdab827c52f"), image("photo-1553877522-43269d4ea984")] },
-      { eyebrow: "Research synthesis", title: "Make raw sessions useful for product, design, and leadership", text: "Session data is clustered into themes, severity levels, quotes, and recommendations that teams can act on.", points: ["Insight clustering", "Executive summaries", "Evidence traceability"], images: [image("photo-1517245386807-bb43f82c33c4"), image("photo-1504384308090-c894fdcc538d"), image("photo-1531482615713-2afd69097998")], reverse: true, chart: true },
-      { eyebrow: "Highlight reels", title: "Short clips that show the product moment, not just the quote", text: "Reels include context, task state, participant segment, and clear reason the clip matters.", points: ["Clip selection", "Reel editing", "Downloadable summaries"], images: [image("photo-1516321497487-e288fb19713f"), image("photo-1497366754035-f200968a6e72"), image("photo-1556761175-5973dc0f32e7")], video: true },
-      { eyebrow: "Service CTA", title: "Choose the research support that matches the product risk", text: "Start with a short scoping call and get a recommended testing plan for your team size, timeline, and decision point.", points: ["Research brief", "Timeline estimate", "Participant plan"], images: [image("photo-1497366811353-6870744d04b2"), image("photo-1521737604893-d14cc237f11d"), image("photo-1542744173-8e7e53415bb0")], cta: true }
+      { eyebrow: "Moderated user testing", title: "Live sessions that reveal expectations, confusion, and product trust", text: "A neutral moderator guides participants through realistic tasks while observers capture decision-grade evidence.", points: ["Remote testing", "Live observation", "Timestamped notes"], images: [image("photo-1556761175-b413da4baf72"), image("photo-1522071820081-009f0129c71c"), image("photo-1517048676732-d65bc937f952")], cardImage: "assets/images/service-1.png" },
+      { eyebrow: "Prototype evaluation", title: "Pressure-test concepts before engineering commits", text: "Figma, clickable prototypes, landing flows, and onboarding concepts are tested against real comprehension and behavior.", points: ["Figma links", "Task success tracking", "Concept clarity scoring"], images: [image("photo-1581291518857-4e27b48ff24e"), image("photo-1545239351-1141bd82e8a6"), image("photo-1516321318423-f06f85e504b3")], cardImage: "assets/images/service-2.png", reverse: true },
+      { eyebrow: "Usability audits", title: "Expert review paired with moderated evidence", text: "Audit findings are validated against participant behavior so recommendations do not float away from reality.", points: ["Accessibility review", "UX benchmarking", "Conversion friction"], images: [image("photo-1551288049-bebda4e38f71"), image("photo-1460925895917-afdab827c52f"), image("photo-1553877522-43269d4ea984")], cardImage: "assets/images/service-3.png" },
+      { eyebrow: "Research synthesis", title: "Make raw sessions useful for product, design, and leadership", text: "Session data is clustered into themes, severity levels, quotes, and recommendations that teams can act on.", points: ["Insight clustering", "Executive summaries", "Evidence traceability"], images: [image("photo-1517245386807-bb43f82c33c4"), image("photo-1504384308090-c894fdcc538d"), image("photo-1531482615713-2afd69097998")], cardImage: "assets/images/service-4.png", reverse: true, chart: true },
+      { eyebrow: "Highlight reels", title: "Short clips that show the product moment, not just the quote", text: "Reels include context, task state, participant segment, and clear reason the clip matters.", points: ["Clip selection", "Reel editing", "Downloadable summaries"], images: [image("photo-1516321497487-e288fb19713f"), image("photo-1497366754035-f200968a6e72"), image("photo-1556761175-5973dc0f32e7")], cardImage: "assets/images/service-5.png", video: true },
+      { eyebrow: "Service CTA", title: "Choose the research support that matches the product risk", text: "Start with a short scoping call and get a recommended testing plan for your team size, timeline, and decision point.", points: ["Research brief", "Timeline estimate", "Participant plan"], images: [image("photo-1497366811353-6870744d04b2"), image("photo-1521737604893-d14cc237f11d"), image("photo-1542744173-8e7e53415bb0")], cardImage: "assets/images/service-6.png", cta: true }
     ]
   },
   methodology: {
@@ -304,7 +341,7 @@ function renderHero(page) {
                   </div>
                   <h3 class="mt-2 font-display text-lg font-bold text-slate-900 dark:text-white">Active Participant Stream</h3>
                   <div class="mt-4 flex gap-2">
-                    ${[1, 2, 3, 4].map(i => `<div class="h-8 w-8 rounded-full border-2 border-white bg-slate-200 dark:border-slate-800"><img src="https://i.pravatar.cc/100?img=${i+10}" class="rounded-full"></div>`).join("")}
+                    ${[1, 2, 3, 4].map(i => `<div class="h-8 w-8 rounded-full border-2 border-white bg-slate-200 dark:border-slate-800"><img src="https://i.pravatar.cc/100?img=${i + 10}" class="rounded-full"></div>`).join("")}
                     <div class="grid h-8 w-8 place-items-center rounded-full bg-primary text-[10px] font-bold text-white">+12</div>
                   </div>
                 </div>
@@ -376,7 +413,7 @@ function renderSection(section, index) {
       ${section.metrics ? `<div class="mt-10 flex gap-8">${section.metrics.map(([v, l]) => `<div><p class="font-display text-3xl font-black text-primary">${v}</p><p class="text-xs font-bold uppercase text-slate-500">${l}</p></div>`).join("")}</div>` : ""}
       ${section.timeline ? `
         <div class="mt-10 flex flex-wrap gap-2">
-          ${section.timeline.map((t, i) => `<span class="rounded-full bg-slate-100 px-4 py-2 text-xs font-bold text-slate-600 dark:bg-white/5 dark:text-slate-400">${i+1}. ${t}</span>`).join("")}
+          ${section.timeline.map((t, i) => `<span class="rounded-full bg-slate-100 px-4 py-2 text-xs font-bold text-slate-600 dark:bg-white/5 dark:text-slate-400">${i + 1}. ${t}</span>`).join("")}
         </div>
       ` : ""}
       ${section.quote ? `
@@ -480,16 +517,17 @@ function renderServicesPage(page) {
     <section class="section-pad">
       <div class="container-pad grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         ${page.sections.map(s => `
-          <div class="glass-panel group relative overflow-hidden p-8 transition-all hover:-translate-y-2">
-            <div class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-primary/5 transition-transform group-hover:scale-150"></div>
-            <div class="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary">
-              ${Site.icon("zap", "h-6 w-6")}
+          <div class="glass-panel group relative flex flex-col overflow-hidden transition-all hover:-translate-y-2">
+            <div class="aspect-video w-full overflow-hidden">
+              <img src="${s.cardImage}" alt="${s.title}" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110">
             </div>
-            <h3 class="mt-6 font-display text-xl font-bold text-slate-900 dark:text-white">${s.title}</h3>
-            <p class="mt-4 text-sm leading-relaxed text-slate-500 dark:text-slate-400">${s.text}</p>
-            <ul class="mt-8 space-y-3">
-              ${s.points.map(p => `<li class="flex items-center gap-3 text-xs font-medium text-slate-600 dark:text-slate-300">${Site.icon("check", "h-3.5 w-3.5 text-primary")} ${p}</li>`).join("")}
-            </ul>
+            <div class="p-8">
+              <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white">${s.title}</h3>
+              <p class="mt-4 text-sm leading-relaxed text-slate-500 dark:text-slate-400">${s.text}</p>
+              <ul class="mt-8 space-y-3">
+                ${s.points.map(p => `<li class="flex items-center gap-3 text-xs font-medium text-slate-600 dark:text-slate-300">${Site.icon("check", "h-3.5 w-3.5 text-primary")} ${p}</li>`).join("")}
+              </ul>
+            </div>
           </div>
         `).join("")}
       </div>
@@ -562,13 +600,12 @@ function renderAboutPage(page) {
 
 function renderMarketingPage(page) {
   const pageKey = document.getElementById("page-root").dataset.page || "home";
-  
+
   if (pageKey === "services") return renderServicesPage(page);
   if (pageKey === "methodology") return renderMethodologyPage(page);
   if (pageKey === "about") return renderAboutPage(page);
   if (pageKey === "pricing") return renderPricingPage(page);
   if (pageKey === "contact") return renderContactPage(page);
-  if (pageKey === "home2") return renderMarketingPage(pageData.home); // Fallback or unique home2
 
   return [
     renderHero(page),

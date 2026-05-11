@@ -116,16 +116,16 @@ function renderHeader() {
           </nav>
 
           <div class="hidden flex-shrink-0 items-center gap-1.5 lg:flex">
-            <a class="btn-secondary inline-flex items-center justify-center px-3.5 text-xs font-bold whitespace-nowrap" href="case-studies.html">View Sample Insights</a>
+            <a class="btn-secondary inline-flex items-center justify-center px-3.5 text-xs font-bold whitespace-nowrap" href="signup.html">Sign Up</a>
             <a class="btn-primary inline-flex items-center justify-center px-3.5 text-xs font-bold whitespace-nowrap" href="contact.html">Book a Research Session</a>
-            <button class="icon-button grid h-10 w-10 flex-shrink-0 place-items-center text-slate-700 dark:text-slate-100" data-theme-toggle aria-label="Toggle dark mode">
+            <button class="icon-button" data-theme-toggle aria-label="Toggle dark mode">
               ${icon("moon", "h-4.5 w-4.5 dark:hidden")}
               ${icon("sun", "hidden h-4.5 w-4.5 dark:block")}
             </button>
-            <button class="icon-button grid h-10 w-10 flex-shrink-0 place-items-center text-[10px] font-black text-slate-700 dark:text-slate-100" data-dir-toggle aria-label="Toggle RTL">RTL</button>
+            <button class="icon-button text-[10px] font-black" data-dir-toggle aria-label="Toggle RTL">RTL</button>
           </div>
 
-          <button class="icon-button grid h-10 w-10 flex-shrink-0 place-items-center text-slate-700 dark:text-slate-100 xl:hidden" data-menu-open aria-label="Open menu">
+          <button class="icon-button xl:hidden" data-menu-open aria-label="Open menu">
             ${icon("menu")}
           </button>
         </div>
@@ -145,7 +145,7 @@ function renderHeader() {
           </div>
           <nav class="space-y-1" aria-label="Mobile navigation">${mobileLinks}</nav>
           <div class="mt-auto grid gap-3 pt-8">
-            <a class="btn-secondary inline-flex items-center justify-center px-4 text-sm font-bold" href="case-studies.html">View Sample Insights</a>
+            <a class="btn-secondary inline-flex items-center justify-center px-4 text-sm font-bold" href="signup.html">Sign Up</a>
             <a class="btn-primary inline-flex items-center justify-center px-4 text-sm font-bold" href="contact.html">Book a Research Session</a>
             <div class="grid grid-cols-2 gap-3">
               <button class="btn-ghost inline-flex items-center justify-center gap-2 px-4 text-sm font-bold" data-theme-toggle>${icon("moon", "h-4 w-4")} Theme</button>

@@ -4,9 +4,12 @@ window.tailwind.config = {
   theme: {
     extend: {
       colors: {
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        accent: "var(--accent)",
         research: {
-          primary: "#4F46E5",
-          secondary: "#06B6D4"
+          primary: "var(--primary)",
+          secondary: "var(--secondary)"
         }
       },
       fontFamily: {

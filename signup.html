@@ -3,52 +3,89 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup | Freelance User Testing Moderator</title>
+    <title>Sign Up | Freelance User Testing Moderator</title>
     <script src="assets/js/tailwind-config.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
   </head>
-  <body class="auth-bg min-h-screen text-slate-950 antialiased dark:text-white">
-    <div class="fixed right-4 top-4 z-10 flex gap-2">
-      <button class="icon-button grid h-11 w-11 place-items-center" data-theme-toggle aria-label="Toggle dark mode"><i data-lucide="moon" class="h-5 w-5"></i></button>
-      <button class="icon-button grid h-11 w-11 place-items-center text-sm font-black" data-dir-toggle>RTL</button>
+  <body class="site-shell text-slate-950 antialiased dark:text-white">
+    <!-- Quick Actions -->
+    <div class="fixed right-4 top-4 z-50 flex gap-2">
+      <button class="icon-button grid h-10 w-10 place-items-center bg-white/50 backdrop-blur-md dark:bg-slate-900/50" data-theme-toggle aria-label="Toggle dark mode">
+        <i data-lucide="moon" class="h-5 w-5 dark:hidden"></i>
+        <i data-lucide="sun" class="hidden h-5 w-5 dark:block"></i>
+      </button>
+      <button class="icon-button grid h-10 w-10 place-items-center bg-white/50 backdrop-blur-md text-[10px] font-black dark:bg-slate-900/50" data-dir-toggle>RTL</button>
     </div>
 
-    <main class="grid min-h-screen place-items-center px-4 py-16">
-      <section class="glass-panel w-full max-w-md p-6">
-        <a href="index.html" class="mx-auto flex w-fit flex-col items-center text-center">
-          <span class="grid h-14 w-14 place-items-center rounded-lg bg-gradient-to-br from-research-primary to-research-secondary text-white">
-            <i data-lucide="scan-search" class="h-7 w-7"></i>
-          </span>
-          <span class="mt-4 font-display text-xl font-extrabold">FUT Moderator</span>
-          <span class="mt-1 text-sm text-slate-500 dark:text-slate-400">Create research workspace</span>
-        </a>
+    <main class="relative min-h-screen overflow-hidden flex items-center justify-center py-12 px-4">
+      <!-- Background Blobs -->
+      <div class="absolute -left-24 top-1/4 h-96 w-96 animate-blob rounded-full bg-secondary/10 blur-3xl"></div>
+      <div class="absolute -right-24 bottom-1/4 h-96 w-96 animate-blob animation-delay-2000 rounded-full bg-primary/10 blur-3xl"></div>
 
-        <div class="mt-8">
-          <h1 class="font-display text-2xl font-extrabold">Start your client workspace</h1>
-          <p class="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">Create access for prototype uploads, moderated sessions, recordings, reports, and secure messages.</p>
-        </div>
-
-        <div class="mt-6 grid gap-3">
-          <button class="btn-ghost inline-flex items-center justify-center gap-2 px-4 text-sm font-bold"><i data-lucide="chrome" class="h-4 w-4"></i> Sign up with Google</button>
-          <button class="btn-ghost inline-flex items-center justify-center gap-2 px-4 text-sm font-bold"><i data-lucide="shield" class="h-4 w-4"></i> Sign up with Apple</button>
-        </div>
-
-        <form class="mt-6 grid gap-4">
-          <label class="grid gap-2 text-sm font-bold">Full name<input class="rounded-lg border border-slate-200 bg-white px-4 py-3 outline-none focus:border-research-primary dark:border-white/10 dark:bg-slate-900" placeholder="Your name"></label>
-          <label class="grid gap-2 text-sm font-bold">Work email<input type="email" class="rounded-lg border border-slate-200 bg-white px-4 py-3 outline-none focus:border-research-primary dark:border-white/10 dark:bg-slate-900" placeholder="you@company.com"></label>
-          <label class="grid gap-2 text-sm font-bold">Password
-            <span class="relative">
-              <input id="signup-password" type="password" class="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 pr-12 outline-none focus:border-research-primary dark:border-white/10 dark:bg-slate-900" placeholder="Create password">
-              <button type="button" class="absolute right-2 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-lg text-slate-500" data-password-toggle="signup-password" aria-label="Show password"><i data-lucide="eye" class="h-5 w-5"></i></button>
+      <div class="relative z-10 w-full max-w-md flex flex-col items-center">
+        <div class="glass-panel w-full p-8 md:p-10 reveal">
+          <!-- Internal Logo/Brand -->
+          <a href="index.html" class="flex flex-col items-center gap-3 mb-10">
+            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-indigo-600 to-cyan-500 text-white shadow-neon">
+              <i data-lucide="scan-search" class="h-7 w-7"></i>
             </span>
-          </label>
-          <label class="flex items-start gap-2 text-sm leading-6"><input class="mt-1" type="checkbox" checked> I agree to secure handling of research materials and session recordings.</label>
-          <a href="dashboard.html" class="btn-primary inline-flex items-center justify-center gap-2 px-4 text-sm font-bold">Create workspace <i data-lucide="arrow-right" class="h-4 w-4 rtl-flip"></i></a>
-        </form>
+            <div class="text-center">
+              <span class="block font-display text-xl font-extrabold text-slate-950 dark:text-white uppercase tracking-wider">FUT Moderator</span>
+              <span class="block text-[10px] font-bold text-secondary dark:text-cyan-400 uppercase tracking-[0.2em] mt-1">Research operations</span>
+            </div>
+          </a>
 
-        <p class="mt-6 text-center text-sm text-slate-600 dark:text-slate-300">Already have access? <a class="font-bold text-research-primary dark:text-cyan-300" href="login.html">Log in</a></p>
-      </section>
+          <div class="text-center">
+            <h2 class="font-display text-2xl font-black">Create account</h2>
+            <p class="mt-2 text-sm text-slate-500">Join the platform to manage your research.</p>
+          </div>
+
+          <div class="mt-10 grid grid-cols-2 gap-3">
+            <button class="btn-ghost flex items-center justify-center gap-2 py-3 text-xs font-bold">
+              <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="h-4 w-4" alt="Google"> Google
+            </button>
+            <button class="btn-ghost flex items-center justify-center gap-2 py-3 text-xs font-bold">
+              <i data-lucide="apple" class="h-4.5 w-4.5 mb-0.5"></i> Apple
+            </button>
+          </div>
+
+          <div class="relative my-8 text-center">
+            <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-slate-200 dark:border-white/10"></div></div>
+            <span class="relative bg-white px-4 text-xs font-bold uppercase tracking-widest text-slate-400 dark:bg-slate-900">Or use your email</span>
+          </div>
+
+          <form class="grid gap-6">
+            <div class="grid gap-2">
+              <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Full Name</label>
+              <input type="text" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none focus:border-primary dark:border-white/10 dark:bg-white/5" placeholder="John Doe">
+            </div>
+            <div class="grid gap-2">
+              <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Work Email</label>
+              <input type="email" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none focus:border-primary dark:border-white/10 dark:bg-white/5" placeholder="name@company.com">
+            </div>
+            <div class="grid gap-2">
+              <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Password</label>
+              <div class="relative">
+                <input id="signup-password" type="password" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 pr-12 outline-none focus:border-primary dark:border-white/10 dark:bg-white/5" placeholder="••••••••">
+                <button type="button" class="absolute right-2 top-1/2 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-lg text-slate-400" data-password-toggle="signup-password">
+                  <i data-lucide="eye" class="h-5 w-5"></i>
+                </button>
+              </div>
+            </div>
+            <a href="dashboard.html" class="btn-primary py-4">Create Account</a>
+          </form>
+
+          <p class="mt-8 text-center text-sm text-slate-500">
+            Already have access? <a href="login.html" class="font-bold text-primary hover:underline">Log in</a>
+          </p>
+        </div>
+        
+        <p class="mt-8 text-xs text-slate-500 dark:text-slate-600 reveal">
+          © 2026 Freelance User Testing Moderator. Secure System.
+        </p>
+      </div>
     </main>
 
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -56,3 +93,4 @@
     <script src="assets/js/auth.js"></script>
   </body>
 </html>
+
