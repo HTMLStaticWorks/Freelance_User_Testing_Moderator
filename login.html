@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Freelance User Testing Moderator</title>
+    <script src="assets/js/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body class="auth-bg min-h-screen text-slate-950 antialiased dark:text-white">
+    <div class="fixed right-4 top-4 z-10 flex gap-2">
+      <button class="icon-button grid h-11 w-11 place-items-center" data-theme-toggle aria-label="Toggle dark mode"><i data-lucide="moon" class="h-5 w-5"></i></button>
+      <button class="icon-button grid h-11 w-11 place-items-center text-sm font-black" data-dir-toggle>RTL</button>
+    </div>
+
+    <main class="grid min-h-screen place-items-center px-4 py-16">
+      <section class="glass-panel w-full max-w-md p-6">
+        <a href="index.html" class="mx-auto flex w-fit flex-col items-center text-center">
+          <span class="grid h-14 w-14 place-items-center rounded-lg bg-gradient-to-br from-research-primary to-research-secondary text-white">
+            <i data-lucide="scan-search" class="h-7 w-7"></i>
+          </span>
+          <span class="mt-4 font-display text-xl font-extrabold">FUT Moderator</span>
+          <span class="mt-1 text-sm text-slate-500 dark:text-slate-400">Secure research access</span>
+        </a>
+
+        <div class="mt-8">
+          <h1 class="font-display text-2xl font-extrabold">Welcome back</h1>
+          <p class="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">Log in to view recordings, insights, reports, and participant recruitment status.</p>
+        </div>
+
+        <div class="mt-6 grid gap-3">
+          <button class="btn-ghost inline-flex items-center justify-center gap-2 px-4 text-sm font-bold"><i data-lucide="chrome" class="h-4 w-4"></i> Continue with Google</button>
+          <button class="btn-ghost inline-flex items-center justify-center gap-2 px-4 text-sm font-bold"><i data-lucide="shield" class="h-4 w-4"></i> Continue with Apple</button>
+        </div>
+
+        <form class="mt-6 grid gap-4">
+          <label class="grid gap-2 text-sm font-bold">Email<input type="email" class="rounded-lg border border-slate-200 bg-white px-4 py-3 outline-none focus:border-research-primary dark:border-white/10 dark:bg-slate-900" placeholder="you@company.com"></label>
+          <label class="grid gap-2 text-sm font-bold">Password
+            <span class="relative">
+              <input id="login-password" type="password" class="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 pr-12 outline-none focus:border-research-primary dark:border-white/10 dark:bg-slate-900" placeholder="Enter password">
+              <button type="button" class="absolute right-2 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-lg text-slate-500" data-password-toggle="login-password" aria-label="Show password"><i data-lucide="eye" class="h-5 w-5"></i></button>
+            </span>
+          </label>
+          <div class="flex items-center justify-between gap-3 text-sm">
+            <label class="flex items-center gap-2"><input type="checkbox" checked> Remember me</label>
+            <a class="font-bold text-research-primary dark:text-cyan-300" href="#">Forgot password?</a>
+          </div>
+          <a href="dashboard.html" class="btn-primary inline-flex items-center justify-center gap-2 px-4 text-sm font-bold">Log in <i data-lucide="arrow-right" class="h-4 w-4 rtl-flip"></i></a>
+        </form>
+
+        <p class="mt-6 text-center text-sm text-slate-600 dark:text-slate-300">New client? <a class="font-bold text-research-primary dark:text-cyan-300" href="signup.html">Create an account</a></p>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/auth.js"></script>
+  </body>
+</html>
