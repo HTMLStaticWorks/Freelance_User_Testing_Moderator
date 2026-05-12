@@ -192,3 +192,5 @@ function injectComponents() {
     lucide.createIcons();
   }
 }
+
+injectComponents();
