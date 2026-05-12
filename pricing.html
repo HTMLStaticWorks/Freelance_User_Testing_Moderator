@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing | UserTestPro</title>
+    <title>Pricing & Plans | UserTestPro</title>
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/js/tailwind-config.js"></script>
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="font-inter bg-slate-50 text-slate-900 dark:bg-[#0b1120] dark:text-slate-100 transition-colors duration-300 antialiased overflow-x-hidden">
@@ -21,133 +27,103 @@
 
     <main class="pt-20">
         <!-- 1. Hero -->
-        <section class="py-20 text-center relative">
-            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-                <h1 class="text-3xl sm:text-5xl font-sora font-bold mb-6 text-slate-900 dark:text-white">Transparent Pricing for <br class="hidden sm:block">Clear Insights</h1>
-                <p class="text-xl text-slate-600 dark:text-slate-400">Choose the right research package for your product phase. No hidden fees, just actionable data.</p>
+        <section class="py-24 relative overflow-hidden bg-white dark:bg-[#0b1120]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+                <h1 class="text-4xl sm:text-6xl font-sora font-bold mb-6 text-slate-900 dark:text-white">Transparent <span class="text-gradient">Pricing</span> for Research Teams</h1>
+                <p class="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Investment-grade insights to de-risk your product strategy. Choose the sprint level that fits your goals.</p>
             </div>
         </section>
 
-        <!-- 2. Pricing Cards -->
+        <!-- 2. Pricing Toggle -->
+        <div class="flex justify-center mb-12 reveal stagger-1">
+            <div class="bg-slate-100 dark:bg-slate-800 p-1 rounded-xl flex">
+                <button class="px-6 py-2 rounded-lg bg-white dark:bg-slate-700 shadow-sm font-semibold text-sm">One-off Sprint</button>
+                <button class="px-6 py-2 rounded-lg text-slate-500 hover:text-slate-900 dark:hover:text-white font-semibold text-sm transition-colors">Enterprise (Annual)</button>
+            </div>
+        </div>
+
+        <!-- 3. Pricing Cards -->
         <section class="pb-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
-                    
-                    <!-- Starter -->
-                    <div class="bg-white dark:bg-slate-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 shadow-sm reveal flex flex-col h-full">
-                        <h3 class="text-xl font-sora font-semibold mb-2">Starter Research</h3>
-                        <p class="text-slate-500 text-sm mb-6">Perfect for validating early concepts.</p>
-                        <div class="mb-6">
-                            <span class="text-4xl font-bold font-sora text-slate-900 dark:text-white">$1,500</span>
-                            <span class="text-slate-500">/project</span>
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Plan 1 -->
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300 reveal flex flex-col">
+                        <div class="mb-8">
+                            <h3 class="text-xl font-sora font-bold mb-2">Standard Evaluation</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm">Perfect for quick prototype validation.</p>
                         </div>
-                        <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-300 mb-8">
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> 5 Moderated Sessions</li>
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Standard Recruitment</li>
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Raw Session Recordings</li>
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Top-line Summary Report</li>
-                            <li class="flex items-center gap-3 text-slate-400"><i data-lucide="minus" class="w-4 h-4"></i> No Highlight Reels</li>
+                        <div class="mb-8">
+                            <span class="text-4xl font-sora font-bold">$1,450</span>
+                            <span class="text-slate-400">/ sprint</span>
+                        </div>
+                        <ul class="space-y-4 mb-10 flex-1">
+                            <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 5 Moderated Sessions</li>
+                            <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Standard Recruitment (B2C)</li>
+                            <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Session Recordings</li>
+                            <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Automated Transcript</li>
+                            <li class="flex items-center gap-3 text-sm text-slate-400"><i data-lucide="x" class="w-4 h-4"></i> Custom Research Report</li>
                         </ul>
-                        <a href="contact.html" class="block w-full text-center py-3 px-4 rounded-xl font-medium text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg mt-auto">Get Started</a>
+                        <a href="contact.html" class="w-full py-4 text-center border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">Choose Standard</a>
                     </div>
 
-                    <!-- Professional (POPULAR) -->
-                    <div class="bg-slate-900 dark:bg-slate-800 rounded-3xl p-8 border-2 border-primary shadow-2xl relative lg:transform lg:-translate-y-4 reveal stagger-1 flex flex-col h-full">
-                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full text-xs font-bold tracking-wide">MOST POPULAR</div>
-                        <h3 class="text-xl font-sora font-semibold mb-2 text-white">Professional UX Testing</h3>
-                        <p class="text-slate-400 text-sm mb-6">Ideal for pre-launch evaluation.</p>
-                        <div class="mb-6">
-                            <span class="text-4xl font-bold font-sora text-white">$3,800</span>
-                            <span class="text-slate-400">/project</span>
+                    <!-- Plan 2 (Featured) -->
+                    <div class="bg-slate-900 dark:bg-primary/10 p-8 rounded-3xl border-2 border-primary shadow-2xl relative reveal stagger-1 flex flex-col transform lg:scale-105">
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Most Popular</div>
+                        <div class="mb-8">
+                            <h3 class="text-xl font-sora font-bold mb-2 text-white">Professional Sprint</h3>
+                            <p class="text-slate-400 text-sm">Comprehensive insights with actionable reporting.</p>
                         </div>
-                        <ul class="space-y-4 text-sm text-slate-300 mb-8">
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> 10 Moderated Sessions</li>
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> B2B Persona Recruitment</li>
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> Dashboard Access</li>
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> 1 Highlight Reel Montage</li>
-                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> Comprehensive PDF Report</li>
+                        <div class="mb-8">
+                            <span class="text-4xl font-sora font-bold text-white">$3,200</span>
+                            <span class="text-slate-400">/ sprint</span>
+                        </div>
+                        <ul class="space-y-4 mb-10 flex-1">
+                            <li class="flex items-center gap-3 text-sm text-white"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> 10 Moderated Sessions</li>
+                            <li class="flex items-center gap-3 text-sm text-white"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> Niche Persona Recruitment (B2B)</li>
+                            <li class="flex items-center gap-3 text-sm text-white"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> Custom Research Report</li>
+                            <li class="flex items-center gap-3 text-sm text-white"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> Video Highlight Reel</li>
+                            <li class="flex items-center gap-3 text-sm text-white"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> Stakeholder Presentation</li>
                         </ul>
-                        <a href="contact.html" class="block w-full text-center py-3 px-4 rounded-xl font-medium text-white bg-primary hover:bg-indigo-700 transition-all duration-300 shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 mt-auto">Choose Professional</a>
+                        <a href="contact.html" class="w-full py-4 text-center bg-primary hover:bg-indigo-700 text-white rounded-xl font-bold transition-all shadow-lg shadow-primary/30">Get Started</a>
                     </div>
 
-                    <!-- Enterprise -->
-                    <div class="md:col-span-2 lg:col-span-1 flex justify-center">
-                        <div class="bg-white dark:bg-slate-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 shadow-sm reveal stagger-2 flex flex-col h-full max-w-full md:max-w-md lg:max-w-full">
-                            <h3 class="text-xl font-sora font-semibold mb-2 text-slate-900 dark:text-white">Enterprise Sprint</h3>
-                            <p class="text-slate-500 text-sm mb-6">Full-scale research program.</p>
-                            <div class="mb-6">
-                                <span class="text-4xl font-bold font-sora text-slate-900 dark:text-white">Custom</span>
-                                <span class="text-slate-500">/project</span>
-                            </div>
-                            <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-300 mb-8">
-                                <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> 15+ Moderated Sessions</li>
-                                <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Niche/Global Recruitment</li>
-                                <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Advanced Dashboard Analytics</li>
-                                <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Multiple Highlight Reels</li>
-                                <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> 2 Hrs Executive Presentation</li>
-                            </ul>
-                            <a href="contact.html" class="block w-full text-center py-3 px-4 rounded-xl font-medium text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg mt-auto">Contact Sales</a>
+                    <!-- Plan 3 -->
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300 reveal stagger-2 flex flex-col">
+                        <div class="mb-8">
+                            <h3 class="text-xl font-sora font-bold mb-2">Deep-Dive Package</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm">Full ethnographic study for major redesigns.</p>
                         </div>
+                        <div class="mb-8">
+                            <span class="text-4xl font-sora font-bold">$7,500</span>
+                            <span class="text-slate-400">/ sprint</span>
+                        </div>
+                        <ul class="space-y-4 mb-10 flex-1">
+                            <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 20 Moderated Sessions</li>
+                            <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Global Participant Reach</li>
+                            <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Competitive Benchmarking</li>
+                            <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Persona Development Workshop</li>
+                            <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 6 Months Strategy Support</li>
+                        </ul>
+                        <a href="contact.html" class="w-full py-4 text-center border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">Contact Sales</a>
                     </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. Feature Comparison -->
-        <section class="py-24 bg-slate-50 dark:bg-[#080d1a] border-t border-slate-200 dark:border-slate-800">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-                <h2 class="text-3xl font-sora font-bold text-center mb-12 text-slate-900 dark:text-white">Compare Features</h2>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-left border-collapse">
-                        <thead>
-                            <tr class="border-b-2 border-slate-200 dark:border-slate-700">
-                                <th class="py-4 px-4 font-sora text-slate-900 dark:text-white">Features</th>
-                                <th class="py-4 px-4 font-sora text-center text-slate-900 dark:text-white">Starter</th>
-                                <th class="py-4 px-4 font-sora text-center text-primary dark:text-secondary">Professional</th>
-                                <th class="py-4 px-4 font-sora text-center text-slate-900 dark:text-white">Enterprise</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-sm">
-                            <tr class="border-b border-slate-200 dark:border-slate-800">
-                                <td class="py-4 px-4 text-slate-600 dark:text-slate-400">Recruitment Screener</td>
-                                <td class="py-4 px-4 text-center text-slate-600 dark:text-slate-400">Standard</td>
-                                <td class="py-4 px-4 text-center font-medium text-slate-900 dark:text-white">Custom</td>
-                                <td class="py-4 px-4 text-center font-medium text-slate-900 dark:text-white">Advanced + Global</td>
-                            </tr>
-                            <tr class="border-b border-slate-200 dark:border-slate-800 bg-slate-100/50 dark:bg-slate-800/30">
-                                <td class="py-4 px-4 text-slate-600 dark:text-slate-400">Session Length</td>
-                                <td class="py-4 px-4 text-center text-slate-600 dark:text-slate-400">30 Mins</td>
-                                <td class="py-4 px-4 text-center font-medium text-slate-900 dark:text-white">45-60 Mins</td>
-                                <td class="py-4 px-4 text-center font-medium text-slate-900 dark:text-white">Up to 90 Mins</td>
-                            </tr>
-                            <tr class="border-b border-slate-200 dark:border-slate-800">
-                                <td class="py-4 px-4 text-slate-600 dark:text-slate-400">Secure Dashboard Access</td>
-                                <td class="py-4 px-4 text-center"><i data-lucide="check" class="w-4 h-4 mx-auto text-green-500"></i></td>
-                                <td class="py-4 px-4 text-center"><i data-lucide="check" class="w-4 h-4 mx-auto text-green-500"></i></td>
-                                <td class="py-4 px-4 text-center"><i data-lucide="check" class="w-4 h-4 mx-auto text-green-500"></i></td>
-                            </tr>
-                            <tr class="border-b border-slate-200 dark:border-slate-800 bg-slate-100/50 dark:bg-slate-800/30">
-                                <td class="py-4 px-4 text-slate-600 dark:text-slate-400">Post-Session Debriefs</td>
-                                <td class="py-4 px-4 text-center text-slate-400"><i data-lucide="minus" class="w-4 h-4 mx-auto"></i></td>
-                                <td class="py-4 px-4 text-center"><i data-lucide="check" class="w-4 h-4 mx-auto text-green-500"></i></td>
-                                <td class="py-4 px-4 text-center"><i data-lucide="check" class="w-4 h-4 mx-auto text-green-500"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
         </section>
 
         <!-- 4. Add-ons -->
         <section class="py-24 bg-white dark:bg-[#0b1120]">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
-                <h2 class="text-3xl font-sora font-bold mb-8 text-slate-900 dark:text-white">Available Add-ons</h2>
-                <div class="grid md:grid-cols-3 gap-6">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-sora font-bold mb-12 text-center text-slate-900 dark:text-white reveal">Available Add-ons</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal stagger-1">
                     <div class="p-6 border border-slate-200 dark:border-slate-700 rounded-2xl bg-slate-50 dark:bg-slate-800/50 flex flex-col h-full">
-                        <h4 class="font-bold mb-2 font-sora text-slate-900 dark:text-white">Extra Highlight Reel</h4>
-                        <p class="text-primary font-medium mb-2">+$250</p>
-                        <p class="text-xs text-slate-500 flex-1">Additional themed video montage.</p>
+                        <h4 class="font-bold mb-2 font-sora text-slate-900 dark:text-white">Same-Day Reports</h4>
+                        <p class="text-primary font-medium mb-2">+$500</p>
+                        <p class="text-xs text-slate-500 flex-1">Executive summary delivered within 12 hours of final session.</p>
+                    </div>
+                    <div class="p-6 border border-slate-200 dark:border-slate-700 rounded-2xl bg-slate-50 dark:bg-slate-800/50 flex flex-col h-full">
+                        <h4 class="font-bold mb-2 font-sora text-slate-900 dark:text-white">Expert Evaluation</h4>
+                        <p class="text-primary font-medium mb-2">+$750</p>
+                        <p class="text-xs text-slate-500 flex-1">Heuristic analysis by a PhD researcher prior to user sessions.</p>
                     </div>
                     <div class="p-6 border border-slate-200 dark:border-slate-700 rounded-2xl bg-slate-50 dark:bg-slate-800/50 flex flex-col h-full">
                         <h4 class="font-bold mb-2 font-sora text-slate-900 dark:text-white">Additional Participant</h4>
@@ -236,4 +212,3 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
-
