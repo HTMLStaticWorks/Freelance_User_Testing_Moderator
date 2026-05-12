@@ -11,18 +11,30 @@ const Header = () => `
       </a>
 
       <!-- Desktop Nav -->
+<<<<<<< HEAD
+      <nav class="hidden xl:flex items-center gap-1">
+=======
       <nav class="hidden lg:flex items-center gap-1">
+>>>>>>> 193bc76e293c0f611c2ccc6e0fe241189d5901bb
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="pricing.html" class="nav-link">Pricing</a>
         <a href="blog.html" class="nav-link">Blog</a>
         <a href="contact.html" class="nav-link">Contact</a>
+<<<<<<< HEAD
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+
+      <!-- Right Actions -->
+      <div class="hidden xl:flex items-center gap-3">
+=======
         <a href="dashboard.html" class="nav-link text-primary dark:text-secondary font-semibold">Dashboard</a>
       </nav>
 
       <!-- Right Actions -->
       <div class="hidden lg:flex items-center gap-3">
+>>>>>>> 193bc76e293c0f611c2ccc6e0fe241189d5901bb
         <!-- Theme + RTL -->
         <div class="flex items-center gap-1">
           <button id="theme-toggle" class="p-2 text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-secondary transition-colors rounded-full hover:bg-slate-100 dark:hover:bg-slate-800" title="Toggle theme">
@@ -35,8 +47,11 @@ const Header = () => `
         </div>
         <!-- Divider -->
         <div class="h-6 w-px bg-slate-200 dark:bg-slate-700"></div>
+<<<<<<< HEAD
+=======
         <!-- Log In -->
         <a href="login.html" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-secondary transition-colors whitespace-nowrap">Log In</a>
+>>>>>>> 193bc76e293c0f611c2ccc6e0fe241189d5901bb
         <!-- Sign Up -->
         <a href="signup.html" class="text-sm font-semibold border border-primary text-primary dark:text-secondary dark:border-secondary px-4 py-2 rounded-full hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all duration-200 whitespace-nowrap">Sign Up</a>
         <!-- Book Session CTA -->
@@ -44,23 +59,53 @@ const Header = () => `
       </div>
 
       <!-- Mobile Menu Button -->
-      <button class="lg:hidden p-2 text-slate-600 dark:text-slate-300" id="mobile-menu-btn">
+      <button class="xl:hidden p-2 text-slate-600 dark:text-slate-300" id="mobile-menu-btn">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
   </div>
 
   <!-- Mobile Menu -->
+<<<<<<< HEAD
+  <div class="xl:hidden hidden bg-white dark:bg-[#0b1120] border-b border-slate-200 dark:border-slate-800 absolute w-full shadow-xl" id="mobile-menu">
+=======
   <div class="lg:hidden hidden bg-white dark:bg-[#0b1120] border-b border-slate-200 dark:border-slate-800 absolute w-full shadow-xl" id="mobile-menu">
+>>>>>>> 193bc76e293c0f611c2ccc6e0fe241189d5901bb
     <div class="px-4 pt-3 pb-6">
       <!-- Nav Links -->
       <div class="space-y-1 mb-4">
         <a href="index.html" class="mobile-nav-link">Home</a>
+<<<<<<< HEAD
+        <a href="home2.html" class="mobile-nav-link">Home 2</a>
+=======
+>>>>>>> 193bc76e293c0f611c2ccc6e0fe241189d5901bb
         <a href="about.html" class="mobile-nav-link">About</a>
         <a href="services.html" class="mobile-nav-link">Services</a>
         <a href="pricing.html" class="mobile-nav-link">Pricing</a>
         <a href="blog.html" class="mobile-nav-link">Blog</a>
         <a href="contact.html" class="mobile-nav-link">Contact</a>
+<<<<<<< HEAD
+        <a href="dashboard.html" class="mobile-nav-link">Dashboard</a>
+      </div>
+      <!-- Theme & RTL -->
+      <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4 mb-4">
+        <div class="flex items-center gap-2">
+          <span class="text-sm font-medium text-slate-500">Theme:</span>
+          <button id="mobile-theme-toggle" class="p-2 text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-secondary transition-colors rounded-full bg-slate-100 dark:bg-slate-800">
+            <i data-lucide="moon" class="w-4 h-4 dark:hidden"></i>
+            <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
+          </button>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-sm font-medium text-slate-500">Language:</span>
+          <button id="mobile-rtl-toggle" class="p-2 text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-secondary transition-colors font-medium text-xs rounded-full bg-slate-100 dark:bg-slate-800 px-4">
+            RTL
+          </button>
+        </div>
+      </div>
+      <!-- Auth Buttons -->
+      <div class="space-y-3">
+=======
         <a href="dashboard.html" class="mobile-nav-link">
           <span class="text-primary dark:text-secondary font-semibold">Dashboard</span>
         </a>
@@ -80,6 +125,7 @@ const Header = () => `
       <!-- Auth Buttons -->
       <div class="space-y-3">
         <a href="login.html" class="block text-center border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 px-5 py-3 rounded-xl font-medium w-full hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">Log In</a>
+>>>>>>> 193bc76e293c0f611c2ccc6e0fe241189d5901bb
         <a href="signup.html" class="block text-center border-2 border-primary text-primary dark:text-secondary dark:border-secondary px-5 py-3 rounded-xl font-semibold w-full hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all">Sign Up</a>
         <a href="contact.html" class="block text-center bg-primary hover:bg-indigo-700 text-white px-5 py-3 rounded-xl font-semibold w-full shadow-lg shadow-primary/30 transition-all">Book Research Session</a>
       </div>
