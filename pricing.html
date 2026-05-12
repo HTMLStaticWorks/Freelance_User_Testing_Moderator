@@ -1,23 +1,235 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing | Freelance User Testing Moderator</title>
-    <script src="assets/js/tailwind-config.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
-      <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  </head>
-  <body class="site-shell text-slate-950 antialiased dark:text-white">
-    <div id="site-header"></div>
-    <main id="page-root" data-page="pricing"></main>
-    <div id="site-footer"></div>
-    <div id="video-modal" class="hidden"></div>
+    <title>Pricing | UserTestPro</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-inter bg-slate-50 text-slate-900 dark:bg-[#0b1120] dark:text-slate-100 transition-colors duration-300 antialiased overflow-x-hidden">
+
+    <div id="header-placeholder"></div>
+
+    <main class="pt-20">
+        <!-- 1. Hero -->
+        <section class="py-20 text-center relative">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+                <h1 class="text-4xl md:text-5xl font-sora font-bold mb-6 text-slate-900 dark:text-white">Transparent Pricing for <br>Clear Insights</h1>
+                <p class="text-xl text-slate-600 dark:text-slate-400">Choose the right research package for your product phase. No hidden fees, just actionable data.</p>
+            </div>
+        </section>
+
+        <!-- 2. Pricing Cards -->
+        <section class="pb-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-3 gap-8 items-center max-w-6xl mx-auto">
+                    
+                    <!-- Starter -->
+                    <div class="bg-white dark:bg-slate-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 shadow-sm reveal">
+                        <h3 class="text-xl font-sora font-semibold mb-2">Starter Research</h3>
+                        <p class="text-slate-500 text-sm mb-6">Perfect for validating early concepts.</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold font-sora text-slate-900 dark:text-white">$1,500</span>
+                            <span class="text-slate-500">/project</span>
+                        </div>
+                        <a href="contact.html" class="block w-full text-center py-3 px-4 rounded-xl font-medium text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors mb-8">Get Started</a>
+                        <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-300">
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> 5 Moderated Sessions</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Standard Recruitment</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Raw Session Recordings</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Top-line Summary Report</li>
+                            <li class="flex items-center gap-3 text-slate-400"><i data-lucide="minus" class="w-4 h-4"></i> No Highlight Reels</li>
+                        </ul>
+                    </div>
+
+                    <!-- Professional (POPULAR) -->
+                    <div class="bg-slate-900 dark:bg-slate-800 rounded-3xl p-8 border-2 border-primary shadow-2xl relative transform lg:-translate-y-4 reveal stagger-1">
+                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full text-xs font-bold tracking-wide">MOST POPULAR</div>
+                        <h3 class="text-xl font-sora font-semibold mb-2 text-white">Professional UX Testing</h3>
+                        <p class="text-slate-400 text-sm mb-6">Ideal for pre-launch evaluation.</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold font-sora text-white">$3,800</span>
+                            <span class="text-slate-400">/project</span>
+                        </div>
+                        <a href="contact.html" class="block w-full text-center py-3 px-4 rounded-xl font-medium text-white bg-primary hover:bg-indigo-600 transition-colors mb-8 shadow-[0_0_15px_rgba(79,70,229,0.4)]">Choose Professional</a>
+                        <ul class="space-y-4 text-sm text-slate-300">
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> 10 Moderated Sessions</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> B2B Persona Recruitment</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> Dashboard Access</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> 1 Highlight Reel Montage</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-secondary"></i> Comprehensive PDF Report</li>
+                        </ul>
+                    </div>
+
+                    <!-- Enterprise -->
+                    <div class="bg-white dark:bg-slate-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 shadow-sm reveal stagger-2">
+                        <h3 class="text-xl font-sora font-semibold mb-2">Enterprise Sprint</h3>
+                        <p class="text-slate-500 text-sm mb-6">Full-scale research program.</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold font-sora text-slate-900 dark:text-white">Custom</span>
+                            <span class="text-slate-500">/project</span>
+                        </div>
+                        <a href="contact.html" class="block w-full text-center py-3 px-4 rounded-xl font-medium text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors mb-8">Contact Sales</a>
+                        <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-300">
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> 15+ Moderated Sessions</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Niche/Global Recruitment</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Advanced Dashboard Analytics</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> Multiple Highlight Reels</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-primary"></i> 2 Hrs Executive Presentation</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Feature Comparison -->
+        <section class="py-24 bg-slate-50 dark:bg-[#080d1a] border-t border-slate-200 dark:border-slate-800">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+                <h2 class="text-3xl font-sora font-bold text-center mb-12 text-slate-900 dark:text-white">Compare Features</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b-2 border-slate-200 dark:border-slate-700">
+                                <th class="py-4 px-4 font-sora text-slate-900 dark:text-white">Features</th>
+                                <th class="py-4 px-4 font-sora text-center text-slate-900 dark:text-white">Starter</th>
+                                <th class="py-4 px-4 font-sora text-center text-primary dark:text-secondary">Professional</th>
+                                <th class="py-4 px-4 font-sora text-center text-slate-900 dark:text-white">Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm">
+                            <tr class="border-b border-slate-200 dark:border-slate-800">
+                                <td class="py-4 px-4 text-slate-600 dark:text-slate-400">Recruitment Screener</td>
+                                <td class="py-4 px-4 text-center text-slate-600 dark:text-slate-400">Standard</td>
+                                <td class="py-4 px-4 text-center font-medium text-slate-900 dark:text-white">Custom</td>
+                                <td class="py-4 px-4 text-center font-medium text-slate-900 dark:text-white">Advanced + Global</td>
+                            </tr>
+                            <tr class="border-b border-slate-200 dark:border-slate-800 bg-slate-100/50 dark:bg-slate-800/30">
+                                <td class="py-4 px-4 text-slate-600 dark:text-slate-400">Session Length</td>
+                                <td class="py-4 px-4 text-center text-slate-600 dark:text-slate-400">30 Mins</td>
+                                <td class="py-4 px-4 text-center font-medium text-slate-900 dark:text-white">45-60 Mins</td>
+                                <td class="py-4 px-4 text-center font-medium text-slate-900 dark:text-white">Up to 90 Mins</td>
+                            </tr>
+                            <tr class="border-b border-slate-200 dark:border-slate-800">
+                                <td class="py-4 px-4 text-slate-600 dark:text-slate-400">Secure Dashboard Access</td>
+                                <td class="py-4 px-4 text-center"><i data-lucide="check" class="w-4 h-4 mx-auto text-green-500"></i></td>
+                                <td class="py-4 px-4 text-center"><i data-lucide="check" class="w-4 h-4 mx-auto text-green-500"></i></td>
+                                <td class="py-4 px-4 text-center"><i data-lucide="check" class="w-4 h-4 mx-auto text-green-500"></i></td>
+                            </tr>
+                            <tr class="border-b border-slate-200 dark:border-slate-800 bg-slate-100/50 dark:bg-slate-800/30">
+                                <td class="py-4 px-4 text-slate-600 dark:text-slate-400">Post-Session Debriefs</td>
+                                <td class="py-4 px-4 text-center text-slate-400"><i data-lucide="minus" class="w-4 h-4 mx-auto"></i></td>
+                                <td class="py-4 px-4 text-center"><i data-lucide="check" class="w-4 h-4 mx-auto text-green-500"></i></td>
+                                <td class="py-4 px-4 text-center"><i data-lucide="check" class="w-4 h-4 mx-auto text-green-500"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Add-ons -->
+        <section class="py-24 bg-white dark:bg-[#0b1120]">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+                <h2 class="text-3xl font-sora font-bold mb-8 text-slate-900 dark:text-white">Available Add-ons</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-6 border border-slate-200 dark:border-slate-700 rounded-2xl bg-slate-50 dark:bg-slate-800/50">
+                        <h4 class="font-bold mb-2 font-sora">Extra Highlight Reel</h4>
+                        <p class="text-primary font-medium mb-2">+$250</p>
+                        <p class="text-xs text-slate-500">Additional themed video montage.</p>
+                    </div>
+                    <div class="p-6 border border-slate-200 dark:border-slate-700 rounded-2xl bg-slate-50 dark:bg-slate-800/50">
+                        <h4 class="font-bold mb-2 font-sora">Additional Participant</h4>
+                        <p class="text-primary font-medium mb-2">+$350/ea</p>
+                        <p class="text-xs text-slate-500">Includes moderation and synthesis.</p>
+                    </div>
+                    <div class="p-6 border border-slate-200 dark:border-slate-700 rounded-2xl bg-slate-50 dark:bg-slate-800/50">
+                        <h4 class="font-bold mb-2 font-sora">Accessibility Audit</h4>
+                        <p class="text-primary font-medium mb-2">+$900</p>
+                        <p class="text-xs text-slate-500">Detailed WCAG compliance report.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. FAQ -->
+        <section class="py-24 bg-slate-50 dark:bg-[#080d1a]">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+                <h2 class="text-3xl font-sora font-bold text-center mb-12 text-slate-900 dark:text-white">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden transition-all duration-300">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center group">
+                            <h4 class="font-bold font-sora text-slate-900 dark:text-white">Are recruitment incentives included?</h4>
+                            <div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 flex items-center justify-center transition-transform duration-300 faq-icon">
+                                <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500"></i>
+                            </div>
+                        </button>
+                        <div class="faq-content h-0 overflow-hidden transition-all duration-300 px-6">
+                            <div class="pb-6">
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Yes, all standard and professional packages include participant incentives (typically $50-$100 per session depending on the persona).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden transition-all duration-300">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center group">
+                            <h4 class="font-bold font-sora text-slate-900 dark:text-white">How long does a research sprint take?</h4>
+                            <div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 flex items-center justify-center transition-transform duration-300 faq-icon">
+                                <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500"></i>
+                            </div>
+                        </button>
+                        <div class="faq-content h-0 overflow-hidden transition-all duration-300 px-6">
+                            <div class="pb-6">
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">A typical Professional sprint takes 2-3 weeks from kickoff to final presentation. Recruitment usually takes 5-7 days.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden transition-all duration-300">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center group">
+                            <h4 class="font-bold font-sora text-slate-900 dark:text-white">Can our team observe the sessions?</h4>
+                            <div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-700 flex items-center justify-center transition-transform duration-300 faq-icon">
+                                <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500"></i>
+                            </div>
+                        </button>
+                        <div class="faq-content h-0 overflow-hidden transition-all duration-300 px-6">
+                            <div class="pb-6">
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Absolutely. We provide secure "invisible observer" links so your team can watch live without disrupting the participant.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Testimonials & CTA -->
+        <section class="py-24 bg-gradient-to-b from-white to-slate-50 dark:from-[#0b1120] dark:to-[#080d1a] text-center">
+            <div class="max-w-3xl mx-auto px-4 reveal">
+                <i data-lucide="quote" class="w-10 h-10 mx-auto text-primary mb-6"></i>
+                <p class="text-xl italic text-slate-600 dark:text-slate-300 mb-6">"The Professional package gave us exactly what we needed to secure budget for our redesign. The highlight reel alone was worth the investment."</p>
+                <p class="font-bold mb-12">- Director of UX, TechCorp</p>
+                
+                <a href="contact.html" class="inline-flex justify-center items-center gap-2 bg-primary hover:bg-indigo-700 text-white px-8 py-4 rounded-full font-medium transition-all shadow-lg hover:-translate-y-1">
+                    Book Your Research Sprint
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
     <script src="assets/js/components.js"></script>
-    <script src="assets/js/pages.js"></script>
-  </body>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
-
-

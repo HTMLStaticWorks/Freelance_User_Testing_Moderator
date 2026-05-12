@@ -1,24 +1,370 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Freelance User Testing Moderator for moderated usability testing, UX research synthesis, prototype testing, and secure client insights.">
-    <title>Freelance User Testing Moderator | Human Insights That Improve Products</title>
-    <script src="assets/js/tailwind-config.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
-      <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  </head>
-  <body class="site-shell text-slate-950 antialiased dark:text-white">
-    <div id="site-header"></div>
-    <main id="page-root" data-page="home"></main>
-    <div id="site-footer"></div>
-    <div id="video-modal" class="hidden"></div>
+    <title>UserTestPro | Human Insights That Build Better Products</title>
+    <meta name="description" content="Premium moderated user testing platform for product teams. Transform user feedback into UX strategy.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-inter bg-slate-50 text-slate-900 dark:bg-[#0b1120] dark:text-slate-100 transition-colors duration-300 antialiased overflow-x-hidden">
+
+    <!-- Header Injection -->
+    <div id="header-placeholder"></div>
+
+    <main class="pt-20">
+        <!-- 1. Hero Section -->
+        <section class="relative min-h-[90vh] flex items-center pt-10 pb-20 overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0 -z-20">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=2000&q=80" alt="Team collaborating" class="w-full h-full object-cover opacity-10 dark:opacity-20">
+            </div>
+            <!-- Background Elements -->
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-blob -z-10"></div>
+            <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-blob animation-delay-2000 -z-10"></div>
+            <div class="absolute bottom-1/4 left-1/2 w-96 h-96 bg-indigo-400/20 rounded-full blur-3xl animate-blob animation-delay-4000 -z-10"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full z-10">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+                    <div class="reveal text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm mb-6 mx-auto lg:mx-0">
+                            <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                            <span class="text-sm font-medium text-slate-600 dark:text-slate-300">New: AI-Powered Insight Synthesis</span>
+                        </div>
+                        <h1 class="text-5xl lg:text-7xl font-sora font-bold leading-[1.1] tracking-tight mb-6 text-slate-900 dark:text-white">
+                            Human Insights That Build <span class="text-gradient">Better Products</span>
+                        </h1>
+                        <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                            Enterprise-grade moderated user testing. We partner with product teams to evaluate prototypes, uncover usability issues, and transform user feedback into actionable UX strategy.
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                            <a href="contact.html" class="inline-flex justify-center items-center gap-2 bg-primary hover:bg-indigo-700 text-white px-8 py-4 rounded-full font-medium transition-all shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1">
+                                Book Research Session
+                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#insights" class="inline-flex justify-center items-center gap-2 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 px-8 py-4 rounded-full font-medium transition-all shadow-sm hover:-translate-y-1">
+                                <i data-lucide="play-circle" class="w-5 h-5 text-primary dark:text-secondary"></i>
+                                View Sample Insights
+                            </a>
+                        </div>
+                        <div class="mt-10 flex items-center justify-center lg:justify-start gap-4 text-sm text-slate-500 dark:text-slate-400">
+                            <div class="flex -space-x-3">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop" alt="User" class="w-10 h-10 rounded-full border-2 border-white dark:border-[#0b1120]">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop" alt="User" class="w-10 h-10 rounded-full border-2 border-white dark:border-[#0b1120]">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="User" class="w-10 h-10 rounded-full border-2 border-white dark:border-[#0b1120]">
+                            </div>
+                            <p>Trusted by 500+ product teams</p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative reveal stagger-2">
+                        <div class="relative z-10 glass-panel rounded-2xl p-4 shadow-2xl glow-primary">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Dashboard Preview" class="rounded-xl w-full object-cover">
+                            <!-- Floating Card 1 -->
+                            <div class="absolute -bottom-6 -left-6 glass-panel rounded-xl p-4 shadow-xl flex items-center gap-4 animate-float">
+                                <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400">
+                                    <i data-lucide="check-circle" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Usability Score</p>
+                                    <p class="text-xl font-sora font-bold text-slate-900 dark:text-white">94/100</p>
+                                </div>
+                            </div>
+                            <!-- Floating Card 2 -->
+                            <div class="absolute -top-6 -right-6 glass-panel rounded-xl p-4 shadow-xl flex items-center gap-4 animate-float animation-delay-2000">
+                                <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-primary dark:text-blue-400">
+                                    <i data-lucide="video" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Active Session</p>
+                                    <p class="text-sm font-sora font-bold text-slate-900 dark:text-white">Recording...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Trusted Product Teams -->
+        <section class="py-10 border-y border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-[#0b1120]/50 backdrop-blur-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+                <p class="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-8">Empowering research at world-class companies</p>
+                <div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                    <span class="text-2xl font-sora font-bold text-slate-800 dark:text-slate-200">AcmeCorp</span>
+                    <span class="text-2xl font-sora font-bold text-slate-800 dark:text-slate-200">GlobalUX</span>
+                    <span class="text-2xl font-sora font-bold text-slate-800 dark:text-slate-200">Stratos</span>
+                    <span class="text-2xl font-sora font-bold text-slate-800 dark:text-slate-200">Vanguard</span>
+                    <span class="text-2xl font-sora font-bold text-slate-800 dark:text-slate-200">Nexus</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. UX Research Services -->
+        <section class="py-24 bg-slate-50 dark:bg-[#080d1a]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                    <h2 class="text-3xl lg:text-4xl font-sora font-bold text-slate-900 dark:text-white mb-4">Comprehensive UX Research Services</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg">From prototype evaluation to deep persona interviews, we provide the methodologies needed to de-risk your product decisions.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-0 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 reveal stagger-1 group overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="assets/images/prototype_testing.png" alt="Prototype Testing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-sora font-bold text-slate-900 dark:text-white mb-3">Prototype Testing</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-6">Evaluate Figma prototypes with real users before writing a single line of code. Identify friction points early.</p>
+                            <a href="services.html" class="inline-flex items-center gap-2 text-primary dark:text-secondary font-medium hover:gap-3 transition-all">Learn more <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-0 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 reveal stagger-2 group overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="assets/images/moderated_interviews.png" alt="Moderated Interviews" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-sora font-bold text-slate-900 dark:text-white mb-3">Moderated Interviews</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-6">Deep-dive 1:1 sessions to understand user mental models, workflows, and pain points with your current product.</p>
+                            <a href="services.html" class="inline-flex items-center gap-2 text-primary dark:text-secondary font-medium hover:gap-3 transition-all">Learn more <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-0 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 reveal stagger-3 group overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="assets/images/ux_benchmarking.png" alt="UX Benchmarking" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-sora font-bold text-slate-900 dark:text-white mb-3">UX Benchmarking</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-6">Measure usability metrics (SUS, SEQ, Task Success) over time to quantify design improvements.</p>
+                            <a href="services.html" class="inline-flex items-center gap-2 text-primary dark:text-secondary font-medium hover:gap-3 transition-all">Learn more <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Testing Workflow -->
+        <section class="py-24 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1 relative reveal">
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-10 blur-3xl rounded-full"></div>
+                        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&q=80" alt="Research Workshop" class="rounded-2xl shadow-2xl relative z-10 object-cover border border-slate-200 dark:border-slate-700">
+                        <div class="absolute -bottom-10 -right-10 z-20 hidden md:block">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&q=80" alt="Sticky Notes" class="w-64 rounded-xl shadow-xl border-4 border-white dark:border-[#0b1120]">
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 reveal stagger-2 text-center lg:text-left">
+                        <h2 class="text-3xl lg:text-4xl font-sora font-bold text-slate-900 dark:text-white mb-6">A streamlined workflow for rapid insights</h2>
+                        <p class="text-slate-600 dark:text-slate-400 text-lg mb-8">We handle the logistics so your team can focus on the findings. From recruitment to reporting, our process is designed for speed and quality.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex flex-col lg:flex-row items-center lg:items-start gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold font-sora">1</div>
+                                <div>
+                                    <h4 class="text-xl font-sora font-semibold text-slate-900 dark:text-white mb-2">Align on Objectives</h4>
+                                    <p class="text-slate-600 dark:text-slate-400">We collaborate to define research goals, target audience criteria, and draft the perfect moderation guide.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col lg:flex-row items-center lg:items-start gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center font-bold font-sora">2</div>
+                                <div>
+                                    <h4 class="text-xl font-sora font-semibold text-slate-900 dark:text-white mb-2">Recruit & Schedule</h4>
+                                    <p class="text-slate-600 dark:text-slate-400">Our system finds exact persona matches and automatically schedules them for moderated sessions.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col lg:flex-row items-center lg:items-start gap-4">
+                                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500/10 text-indigo-500 flex items-center justify-center font-bold font-sora">3</div>
+                                <div>
+                                    <h4 class="text-xl font-sora font-semibold text-slate-900 dark:text-white mb-2">Moderate & Analyze</h4>
+                                    <p class="text-slate-600 dark:text-slate-400">We conduct the interviews, tag key moments, and synthesize findings into an actionable report.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Sample Insights Preview (Dashboard Feel) -->
+        <section id="insights" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?w=1600&q=80')] opacity-10 bg-cover bg-center"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                    <h2 class="text-3xl lg:text-4xl font-sora font-bold mb-4">Secure Research Dashboard</h2>
+                    <p class="text-slate-400 text-lg">Access recordings, highlight reels, and usability reports in one centralized portal built for product teams.</p>
+                </div>
+
+                <div class="bg-slate-800/80 backdrop-blur-xl border border-slate-700 rounded-2xl overflow-hidden shadow-2xl reveal stagger-1">
+                    <div class="flex border-b border-slate-700 bg-slate-800/50">
+                        <div class="px-6 py-4 border-r border-slate-700 font-medium text-secondary">Session Recordings</div>
+                        <div class="px-6 py-4 border-r border-slate-700 text-slate-400 hover:text-white cursor-pointer transition-colors">Highlight Reels</div>
+                        <div class="px-6 py-4 text-slate-400 hover:text-white cursor-pointer transition-colors">Usability Reports</div>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Video Card -->
+                            <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-700 group cursor-pointer">
+                                <div class="relative h-48">
+                                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&q=80" alt="Session" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
+                                            <i data-lucide="play" class="w-5 h-5 ml-1"></i>
+                                        </div>
+                                    </div>
+                                    <span class="absolute bottom-3 right-3 bg-black/70 text-xs px-2 py-1 rounded backdrop-blur-sm">45:20</span>
+                                </div>
+                                <div class="p-4">
+                                    <h4 class="font-sora font-semibold mb-1">Onboarding Flow Test - P1</h4>
+                                    <p class="text-sm text-slate-400">Sarah M. • Enterprise Persona</p>
+                                </div>
+                            </div>
+                            <!-- Video Card -->
+                            <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-700 group cursor-pointer">
+                                <div class="relative h-48">
+                                    <img src="https://images.unsplash.com/photo-1573167243872-43c6433b9d40?w=600&q=80" alt="Session" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
+                                            <i data-lucide="play" class="w-5 h-5 ml-1"></i>
+                                        </div>
+                                    </div>
+                                    <span class="absolute bottom-3 right-3 bg-black/70 text-xs px-2 py-1 rounded backdrop-blur-sm">52:10</span>
+                                </div>
+                                <div class="p-4">
+                                    <h4 class="font-sora font-semibold mb-1">Onboarding Flow Test - P2</h4>
+                                    <p class="text-sm text-slate-400">David K. • SMB Persona</p>
+                                </div>
+                            </div>
+                            <!-- Metrics Card -->
+                            <div class="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl p-6 border border-slate-700 flex flex-col justify-center">
+                                <h4 class="font-sora font-semibold mb-4">Key Finding: Friction in Step 3</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="flex justify-between text-sm mb-1">
+                                            <span class="text-slate-300">Task Success Rate</span>
+                                            <span class="font-bold text-white">65%</span>
+                                        </div>
+                                        <div class="w-full bg-slate-800 rounded-full h-2">
+                                            <div class="bg-red-500 h-2 rounded-full" style="width: 65%"></div>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm text-slate-400 italic">"I didn't notice the 'Skip' button down here, I felt stuck." - Participant 2</p>
+                                    <a href="dashboard.html" class="inline-flex items-center gap-2 text-secondary text-sm font-medium hover:text-white transition-colors mt-2">Open Full Dashboard <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Testimonials -->
+        <section class="py-24 bg-white dark:bg-[#0b1120]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-3xl lg:text-4xl font-sora font-bold text-slate-900 dark:text-white mb-4">Loved by Product Leaders</h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-slate-50 dark:bg-slate-800/50 p-8 rounded-2xl reveal stagger-1">
+                        <div class="flex text-yellow-400 mb-6">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 mb-6 italic">"The highlight reels provided by UserTestPro completely changed our executive team's perspective. The insights were clear, actionable, and delivered lightning fast."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Avatar" class="w-12 h-12 rounded-full">
+                            <div>
+                                <h4 class="font-sora font-semibold text-slate-900 dark:text-white">Elena Rodriguez</h4>
+                                <p class="text-sm text-slate-500">VP of Product, FinTech Scaleup</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-slate-50 dark:bg-slate-800/50 p-8 rounded-2xl reveal stagger-2">
+                        <div class="flex text-yellow-400 mb-6">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 mb-6 italic">"Their dashboard is incredibly intuitive. Being able to jump straight to the tagged friction points in the session recordings saved our UX team hours of analysis time."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" alt="Avatar" class="w-12 h-12 rounded-full">
+                            <div>
+                                <h4 class="font-sora font-semibold text-slate-900 dark:text-white">Marcus Chen</h4>
+                                <p class="text-sm text-slate-500">Lead UX Researcher, SaaS Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-slate-50 dark:bg-slate-800/50 p-8 rounded-2xl reveal stagger-3 hidden lg:block">
+                        <div class="flex text-yellow-400 mb-6">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 mb-6 italic">"We partnered with them to evaluate a complete redesign before launch. The moderated sessions uncovered critical navigational issues we never would have caught."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop" alt="Avatar" class="w-12 h-12 rounded-full">
+                            <div>
+                                <h4 class="font-sora font-semibold text-slate-900 dark:text-white">Sarah Jenkins</h4>
+                                <p class="text-sm text-slate-500">Design Director, E-commerce</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CTA Banner -->
+        <section class="py-24 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10"></div>
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center reveal">
+                <h2 class="text-4xl md:text-5xl font-sora font-bold text-slate-900 dark:text-white mb-6">Ready to build better products?</h2>
+                <p class="text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-2xl mx-auto">Schedule a consultation to discuss your research goals and see how our moderated testing can provide actionable insights.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="contact.html" class="inline-flex justify-center items-center gap-2 bg-primary hover:bg-indigo-700 text-white px-8 py-4 rounded-full font-medium transition-all shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1">
+                        Book Research Session
+                    </a>
+                    <a href="pricing.html" class="inline-flex justify-center items-center gap-2 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 px-8 py-4 rounded-full font-medium transition-all shadow-sm hover:-translate-y-1">
+                        View Pricing Plans
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Injection -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
     <script src="assets/js/components.js"></script>
-    <script src="assets/js/pages.js"></script>
-  </body>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
-
-

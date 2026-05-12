@@ -1,23 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Freelance User Testing Moderator</title>
-    <script src="assets/js/tailwind-config.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
-      <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  </head>
-  <body class="site-shell text-slate-950 antialiased dark:text-white">
-    <div id="site-header"></div>
-    <main id="page-root" data-page="contact"></main>
-    <div id="site-footer"></div>
-    <div id="video-modal" class="hidden"></div>
+    <title>Contact Us | UserTestPro</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="font-inter bg-slate-50 text-slate-900 dark:bg-[#0b1120] dark:text-slate-100 transition-colors duration-300 antialiased overflow-x-hidden">
+
+    <div id="header-placeholder"></div>
+
+    <main class="pt-20">
+        <!-- 1. Hero -->
+        <section class="py-20 bg-white dark:bg-[#080d1a] text-center border-b border-slate-200 dark:border-slate-800">
+            <div class="max-w-3xl mx-auto px-4 reveal">
+                <h1 class="text-4xl md:text-5xl font-sora font-bold mb-6 text-slate-900 dark:text-white">Let's discuss your <span class="text-gradient">research goals</span></h1>
+                <p class="text-xl text-slate-600 dark:text-slate-400">Fill out the form below or book a direct consultation to explore how we can support your product team.</p>
+            </div>
+        </section>
+
+        <section class="py-24 bg-slate-50 dark:bg-[#0b1120]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16">
+                    
+                    <!-- 2. Contact Form -->
+                    <div class="bg-white dark:bg-slate-800 p-8 md:p-10 rounded-3xl shadow-xl border border-slate-200 dark:border-slate-700 reveal">
+                        <h3 class="text-2xl font-sora font-bold mb-6">Send us a message</h3>
+                        <form class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">First Name</label>
+                                    <input type="text" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Last Name</label>
+                                    <input type="text" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Work Email</label>
+                                <input type="email" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Company Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">How can we help?</label>
+                                <textarea rows="4" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"></textarea>
+                            </div>
+                            <button type="button" class="w-full bg-primary hover:bg-indigo-600 text-white font-medium py-4 rounded-xl transition-colors shadow-lg">Submit Inquiry</button>
+                        </form>
+                    </div>
+
+                    <!-- Side Info -->
+                    <div class="reveal stagger-1 flex flex-col justify-between">
+                        
+                        <!-- 3. Consultation Scheduling -->
+                        <div class="bg-slate-900 text-white p-8 rounded-3xl shadow-xl mb-8 relative overflow-hidden">
+                            <div class="absolute -right-10 -top-10 w-40 h-40 bg-secondary/30 rounded-full blur-3xl"></div>
+                            <i data-lucide="calendar" class="w-8 h-8 text-secondary mb-4 relative z-10"></i>
+                            <h3 class="text-2xl font-sora font-bold mb-2 relative z-10">Book a Discovery Call</h3>
+                            <p class="text-slate-400 mb-6 relative z-10">Schedule a 30-minute chat directly on our calendar to discuss your specific research needs.</p>
+                            <button class="bg-white text-slate-900 px-6 py-3 rounded-full font-medium hover:bg-slate-100 transition-colors relative z-10">View Calendar</button>
+                        </div>
+
+                        <!-- 5. Remote Testing Availability & 6. Links -->
+                        <div class="space-y-8">
+                            <div>
+                                <h4 class="font-sora font-bold text-lg mb-4 text-slate-900 dark:text-white">Global Availability</h4>
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400 flex-shrink-0">
+                                        <i data-lucide="globe" class="w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-slate-600 dark:text-slate-400 text-sm">We conduct remote moderated sessions across all time zones. Our recruitment panel covers North America, Europe, and APAC regions.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="font-sora font-bold text-lg mb-4 text-slate-900 dark:text-white">Professional Links</h4>
+                                <div class="flex gap-4">
+                                    <a href="#" class="p-3 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors text-slate-600 dark:text-slate-400 hover:text-primary"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                                    <a href="#" class="p-3 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors text-slate-600 dark:text-slate-400 hover:text-primary"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                                    <a href="#" class="p-3 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors text-slate-600 dark:text-slate-400 hover:text-primary"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
     <script src="assets/js/components.js"></script>
-    <script src="assets/js/pages.js"></script>
-  </body>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
-
-
