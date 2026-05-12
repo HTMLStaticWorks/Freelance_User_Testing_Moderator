@@ -64,20 +64,14 @@ const Header = () => `
         <a href="dashboard.html" class="mobile-nav-link">Dashboard</a>
       </div>
       <!-- Theme & RTL -->
-      <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4 mb-4">
-        <div class="flex items-center gap-2">
-          <span class="text-sm font-medium text-slate-500">Theme:</span>
-          <button id="mobile-theme-toggle" class="p-2 text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-secondary transition-colors rounded-full bg-slate-100 dark:bg-slate-800">
-            <i data-lucide="moon" class="w-4 h-4 dark:hidden"></i>
-            <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
-          </button>
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="text-sm font-medium text-slate-500">Language:</span>
-          <button id="mobile-rtl-toggle" class="p-2 text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-secondary transition-colors font-medium text-xs rounded-full bg-slate-100 dark:bg-slate-800 px-4">
-            RTL
-          </button>
-        </div>
+      <div class="flex items-center justify-center gap-6 border-t border-slate-100 dark:border-slate-800 pt-6 mb-6">
+        <button id="mobile-theme-toggle" class="p-2 text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-secondary transition-colors rounded-full bg-slate-100 dark:bg-slate-800">
+          <i data-lucide="moon" class="w-4 h-4 dark:hidden"></i>
+          <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
+        </button>
+        <button id="mobile-rtl-toggle" class="p-2 text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-secondary transition-colors font-medium text-xs rounded-full bg-slate-100 dark:bg-slate-800 px-6">
+          RTL
+        </button>
       </div>
       <!-- Auth Buttons -->
       <div class="space-y-3">
